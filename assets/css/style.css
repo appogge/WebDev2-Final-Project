@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background: #f00;
+  color: #fff;
+}
+img::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+button:focus {
+  outline: 0;
+}
+
+header {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: transform 0.2s;
+  transform-origin: top;
+  transform: translateY(-100%);
+}
+header.show {
+  transform: translateY(0%);
+}
+.mobile-nav {
+  background-color: #333;
+  color: #fff;
+  font-size: 2em;
+  /* padding: 10px 20px; */
+  position: relative;
+  text-align: right;
+  z-index: 999;
+}
+.mobile-nav i {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 100%; */
+}
+nav a {
+  border: 1px solid #333;
+  color: #fff;
+  letter-spacing: 0.25em;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.gallery-page main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px 10px 40px;
+}
+.gallery-page h1 {
+  background-color: #555;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  padding: 40px 20px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gallery-page h2 {
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  padding: 40px 20px 0px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gallery-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  width: 90%;
+}
+.gallery-buttons button {
+  background: #333;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin: 5px;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+.gallery-buttons button:hover {
+  background: #eee;
+  color: #000;
+}
+footer {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer nav a {
+  text-align: right;
+}
+
+/* Calendar Page Start */
+.gray {
+  background-color: #ddd;
+}
+.select-date {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 10px;
+}
+#month {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Table Start */
+.calendar table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  height: 50vh;
+  margin: 0 auto;
+  max-height: 75vh;
+  max-width: 1000px;
+  table-layout: fixed;
+  width: 90%;
+}
+.calendar thead tr:first-of-type {
+  font-size: 2em;
+}
+.calendar th {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.calendar td {
+  border: 1px solid #000;
+  font-size: 2em;
+  text-align: right;
+  vertical-align: bottom;
+}
+.calendar .long {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .calendar .long {
+    display: inline;
+  }
+  header {
+    position: fixed;
+  }
+  header > nav {
+    flex-direction: row;
+  }
+  nav a {
+    padding: 10px 20px;
+  }
+  main {
+    margin-top: 60px;
+  }
+  .calendar th,
+  .calendar td {
+    padding: 10px;
+  }
+}
+
+/* Calendar Page End */
+
+@media screen and (min-width: 640px) {
+  .gallery-page main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-buttons {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .gallery-buttons button:nth-of-type(4n + 1) {
+    margin-left: 0;
+  }
+  .gallery-buttons button:nth-of-type(4n) {
+    margin-right: 0;
+  }
+  .gallery-buttons button {
+    margin-bottom: 5px;
+    width: calc(25% - 8px);
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    transform: translateY(0%);
+    transition: transform 0s;
+  }
+  header > nav,
+  footer > nav {
+    flex-direction: row;
+  }
+  nav a {
+    padding: 10px 20px;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .gallery-page .page-title {
+    margin-top: 40px;
+  }
+  main {
+    margin-bottom: 40px;
+  }
+  footer nav {
+    justify-content: flex-end;
+  }
+  footer a {
+    width: initial;
+  }
+}
+@media screen and (min-width: 990px) {
+  .gallery-page main {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Jordan Chesley -->
+<!-- Partner Name[s] -->
+<!-- 
+  See video for end results.
+  https://youtu.be/Ctw2W993QgE
+
+  Use the JavaScript files to create the code for each task.
+  
+  navigation.js - Write the code for the mobile trigger. The CSS is already written. You will only need to add the correct classes at the right time. Feel free to alter the CSS for a different effect. The navigation.js file is linked to the index.html and calendar.html pages.
+
+  gallery.js - Use the array of objects to create a filterable gallery page. It is possible to create the gallery only using JavaScript, but you MAY use any technology, including HTML and CSS to complete this task. All images are located in the /assets/images folder.
+  The gallery.js file is linked to the index.html page.
+
+  contact.js - Write the code for the contact modal. You MAY NOT use HTML or CSS to create this element and its children. The entire modal must be created and styled using JavaScript. 
+  The navigation.js file is linked to the index.html and calendar.html pages.
+
+  calendar.js - Use the value from the <input> with the id of "month" to create a <table> for that month whenever the <input> changes. 
+  The calendar.js file is linked to the calendar.html page only.
+
+    DO NOT reorganize the files in this project.
+  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <script src="assets/js/navigation.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+    <script src="assets/js/notification.js" defer></script>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="gallery-page">
+    <div class="wrapper">
+      <div class="mobile-nav">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <header>
+        <nav>
+          <a href="/">Gallery</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="javascript:void(0)" class="contact-btn">Contact</a>
+        </nav>
+      </header>
+      <h1 class="page-title">Animal Gallery</h1>
+      <h2>Choose a Group</h2>
+      <div class="gallery-buttons">
+        <button id="all-animals">All</button>
+        <!-- <button id="bear-animals">Bears</button>
+      <button id="cat-animals">Cats</button>
+      <button id="wolf-animals">Wolves</button> -->
+
+        <!-- 
+        STUDENT NOTE:
+        I create the individual animal buttons using JavaScript. You may use the HTML in the commented section above.
+        
+        JavaScript HINT:
+        let animalGroups = [...new Set(animalArray.map((animal) => animal.species).sort())];
+        The line above will create an array of all the species values.
+      --></div>
+      <main class="animals-section"></main>
+      <footer>
+        <nav>
+          <a href="/">Gallery</a>
+          <a href="calendar.html">Calendar</a>
+          <a href="javascript:void(0)" class="contact-btn">Contact</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
