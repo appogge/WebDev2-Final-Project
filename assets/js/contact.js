@@ -111,3 +111,11 @@ function addStyle(ele, styleObj) {
     ele.style[value] = styleObj[value];
   }
 }
+
+// Modal Functionality
+window.onclick = function(event) {
+	if (event.target == mainDiv) {
+			mainDiv.style.display = "none";
+      console.log("outside-click");
+	}
+}
