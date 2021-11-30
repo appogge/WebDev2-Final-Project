@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
 
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+
 </html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gallery</title>
-    <script src="assets/js/navigation.js" defer=""></script>
-    <script src="assets/js/gallery.js" defer=""></script>
-    <script src="assets/js/contact.js" defer=""></script>
-    <script src="assets/js/notification.js" defer=""></script>
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body class="gallery-page">
-    <div class="wrapper">
-      <div class="mobile-nav">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
-      <header>
-        <nav>
-          <a href="/">Gallery</a>
-          <a href="calendar.html">Calendar</a>
-          <a href="javascript:void(0)" class="contact-btn">Contact</a>
-        </nav>
-      </header>
-      <h1 class="page-title">Animal Gallery</h1>
-      <h2>Choose a Group</h2>
-      <div class="gallery-buttons">
-        <button id="all-animals">All</button>
-        <!-- <button id="bear-animals">Bears</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gallery</title>
+  <script src="assets/js/navigation.js" defer=""></script>
+  <script src="assets/js/gallery.js" defer=""></script>
+  <script src="assets/js/contact.js" defer=""></script>
+  <script src="assets/js/notification.js" defer=""></script>
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="gallery-page">
+  <div class="wrapper">
+    <div class="mobile-nav">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+      <nav>
+        <a href="/">Gallery</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="javascript:void(0)" class="contact-btn">Contact</a>
+      </nav>
+    </header>
+    <h1 class="page-title">Animal Gallery</h1>
+    <h2>Choose a Group</h2>
+    <div class="gallery-buttons">
+      <button id="all-animals">All</button>
+      <!-- <button id="bear-animals">Bears</button>
       <button id="cat-animals">Cats</button>
       <button id="wolf-animals">Wolves</button> -->
 
-        <!-- 
+      <!-- 
         STUDENT NOTE:
         I create the individual animal buttons using JavaScript. You may use the HTML in the commented section above.
         
@@ -52,514 +55,370 @@
         let animalGroups = [...new Set(animalArray.map((animal) => animal.species).sort())];
         The line above will create an array of all the species values.
       -->
-        <button class="bear-animals">Bear</button
-        ><button class="cat-animals">Cat</button
-        ><button class="wolf-animals">Wolf</button>
-      </div>
-      <main class="animals-section">
-        <section class="black-bear" style="position: relative">
-          <img
-            src="assets/images/black-bear.jpg"
-            alt="Black Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Black Bear
-          </h3>
-        </section>
-        <section class="brown-bear" style="position: relative">
-          <img
-            src="assets/images/brown-bear.jpg"
-            alt="Brown Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Brown Bear
-          </h3>
-        </section>
-        <section class="panda-bear" style="position: relative">
-          <img
-            src="assets/images/panda-bear.jpg"
-            alt="Panda Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Panda Bear
-          </h3>
-        </section>
-        <section class="polar-bear" style="position: relative">
-          <img
-            src="assets/images/polar-bear.jpg"
-            alt="Polar Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Polar Bear
-          </h3>
-        </section>
-        <section class="spectacled-bear" style="position: relative">
-          <img
-            src="assets/images/spectacled-bear.jpg"
-            alt="Spectacled Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Spectacled Bear
-          </h3>
-        </section>
-        <section class="spirit-bear" style="position: relative">
-          <img
-            src="assets/images/spirit-bear.jpg"
-            alt="Spirit Bear"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Spirit Bear
-          </h3>
-        </section>
-        <section class="black-panther" style="position: relative">
-          <img
-            src="assets/images/black-panther.jpg"
-            alt="Black Panther"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Black Panther
-          </h3>
-        </section>
-        <section class="cheetah" style="position: relative">
-          <img
-            src="assets/images/cheetah.jpg"
-            alt="Cheetah"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Cheetah
-          </h3>
-        </section>
-        <section class="leopard" style="position: relative">
-          <img
-            src="assets/images/leopard.jpg"
-            alt="Leopard"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Leopard
-          </h3>
-        </section>
-        <section class="lion" style="position: relative">
-          <img
-            src="assets/images/lion.jpg"
-            alt="Lion"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Lion
-          </h3>
-        </section>
-        <section class="lynx" style="position: relative">
-          <img
-            src="assets/images/lynx.jpg"
-            alt="Lynx"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Lynx
-          </h3>
-        </section>
-        <section class="tiger" style="position: relative">
-          <img
-            src="assets/images/tiger.jpg"
-            alt="Tiger"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Tiger
-          </h3>
-        </section>
-        <section class="arctic-wolf" style="position: relative">
-          <img
-            src="assets/images/arctic-wolf.jpg"
-            alt="Arctic Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Arctic Wolf
-          </h3>
-        </section>
-        <section class="eastern-wolf" style="position: relative">
-          <img
-            src="assets/images/eastern-wolf.jpg"
-            alt="Eastern Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Eastern Wolf
-          </h3>
-        </section>
-        <section class="gray-wolf" style="position: relative">
-          <img
-            src="assets/images/gray-wolf.jpg"
-            alt="Gray Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Gray Wolf
-          </h3>
-        </section>
-        <section class="iberian-wolf" style="position: relative">
-          <img
-            src="assets/images/iberian-wolf.jpg"
-            alt="Iberian Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Iberian Wolf
-          </h3>
-        </section>
-        <section class="mexican-wolf" style="position: relative">
-          <img
-            src="assets/images/mexican-wolf.jpg"
-            alt="Mexican Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Mexican Wolf
-          </h3>
-        </section>
-        <section class="steppe-wolf" style="position: relative">
-          <img
-            src="assets/images/steppe-wolf.jpg"
-            alt="Steppe Wolf"
-            width="600"
-            height="400"
-            style="display: block"
-          />
-          <h3
-            style="
-              background-color: rgba(0, 0, 0, 0.5);
-              bottom: 0px;
-              color: rgb(255, 255, 255);
-              font-weight: 100;
-              left: 0px;
-              letter-spacing: 2px;
-              margin: 0px;
-              padding: 10px;
-              position: absolute;
-              text-align: center;
-              text-transform: uppercase;
-              width: 100%;
-            "
-          >
-            Steppe Wolf
-          </h3>
-        </section>
-      </main>
-      <footer>
-        <nav>
-          <a href="/">Gallery</a>
-          <a href="calendar.html">Calendar</a>
-          <a href="javascript:void(0)" class="contact-btn">Contact</a>
-        </nav>
-      </footer>
+      <button class="bear-animals">Bear</button><button class="cat-animals">Cat</button><button
+        class="wolf-animals">Wolf</button>
     </div>
 
-    <!-- Below is a completed version of the modal. You must create each needed element using createElement() and all styles must be added using the style property. 
+    <main class="animals-section">
+      <section class="black-bear" style="position: relative">
+        <img src="assets/images/black-bear.jpg" alt="Black Bear" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Black Bear
+        </h3>
+      </section>
+      <section class="brown-bear" style="position: relative">
+        <img src="assets/images/brown-bear.jpg" alt="Brown Bear" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Brown Bear
+        </h3>
+      </section>
+      <section class="panda-bear" style="position: relative">
+        <img src="assets/images/panda-bear.jpg" alt="Panda Bear" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Panda Bear
+        </h3>
+      </section>
+      <section class="polar-bear" style="position: relative">
+        <img src="assets/images/polar-bear.jpg" alt="Polar Bear" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Polar Bear
+        </h3>
+      </section>
+      <section class="spectacled-bear" style="position: relative">
+        <img src="assets/images/spectacled-bear.jpg" alt="Spectacled Bear" width="600" height="400"
+          style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Spectacled Bear
+        </h3>
+      </section>
+      <section class="spirit-bear" style="position: relative">
+        <img src="assets/images/spirit-bear.jpg" alt="Spirit Bear" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Spirit Bear
+        </h3>
+      </section>
+      <section class="black-panther" style="position: relative">
+        <img src="assets/images/black-panther.jpg" alt="Black Panther" width="600" height="400"
+          style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Black Panther
+        </h3>
+      </section>
+      <section class="cheetah" style="position: relative">
+        <img src="assets/images/cheetah.jpg" alt="Cheetah" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Cheetah
+        </h3>
+      </section>
+      <section class="leopard" style="position: relative">
+        <img src="assets/images/leopard.jpg" alt="Leopard" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Leopard
+        </h3>
+      </section>
+      <section class="lion" style="position: relative">
+        <img src="assets/images/lion.jpg" alt="Lion" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Lion
+        </h3>
+      </section>
+      <section class="lynx" style="position: relative">
+        <img src="assets/images/lynx.jpg" alt="Lynx" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Lynx
+        </h3>
+      </section>
+      <section class="tiger" style="position: relative">
+        <img src="assets/images/tiger.jpg" alt="Tiger" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Tiger
+        </h3>
+      </section>
+      <section class="arctic-wolf" style="position: relative">
+        <img src="assets/images/arctic-wolf.jpg" alt="Arctic Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Arctic Wolf
+        </h3>
+      </section>
+      <section class="eastern-wolf" style="position: relative">
+        <img src="assets/images/eastern-wolf.jpg" alt="Eastern Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Eastern Wolf
+        </h3>
+      </section>
+      <section class="gray-wolf" style="position: relative">
+        <img src="assets/images/gray-wolf.jpg" alt="Gray Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Gray Wolf
+        </h3>
+      </section>
+      <section class="iberian-wolf" style="position: relative">
+        <img src="assets/images/iberian-wolf.jpg" alt="Iberian Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Iberian Wolf
+        </h3>
+      </section>
+      <section class="mexican-wolf" style="position: relative">
+        <img src="assets/images/mexican-wolf.jpg" alt="Mexican Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Mexican Wolf
+        </h3>
+      </section>
+      <section class="steppe-wolf" style="position: relative">
+        <img src="assets/images/steppe-wolf.jpg" alt="Steppe Wolf" width="600" height="400" style="display: block" />
+        <h3 style="
+              background-color: rgba(0, 0, 0, 0.5);
+              bottom: 0px;
+              color: rgb(255, 255, 255);
+              font-weight: 100;
+              left: 0px;
+              letter-spacing: 2px;
+              margin: 0px;
+              padding: 10px;
+              position: absolute;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            ">
+          Steppe Wolf
+        </h3>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="/">Gallery</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="javascript:void(0)" class="contact-btn">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Below is a completed version of the modal. You must create each needed element using createElement() and all styles must be added using the style property. 
     
       To see the modal in the output, delete the "display:none" css below.
     -->
-    <div
-      class="contact-modal show-modal"
-      style="
+  <div class="contact-modal show-modal" style="
         align-items: center;
         background-color: rgba(0, 0, 0, 0.9);
         cursor: pointer;
@@ -572,49 +431,31 @@
         top: 0px;
         width: 100%;
         z-index: 9999;
-      "
-    >
-      <!-- 
+      ">
+    <!-- 
 STUDENT NOTE:
 This modal and all its children elements MUST be created and styled ONLY using JavaScript.
 -->
-      <form
-        autocomplete="on"
-        style="
+    <form autocomplete="on" style="
           background-color: rgb(255, 255, 255);
           cursor: initial;
           padding: 20px;
           max-width: 600px;
           width: calc(100% - 40px);
-        "
-      >
-        <fieldset style="display: flex; flex-direction: column">
-          <legend
-            style="
+        ">
+      <fieldset style="display: flex; flex-direction: column">
+        <legend style="
               font-size: 3em;
               font-weight: 100;
               text-align: center;
               text-transform: uppercase;
-            "
-          >
-            Contact Form
-          </legend>
-          <input
-            id="name"
-            name="name"
-            placeholder="Enter Name"
-            type="text"
-            style="font-size: 1.2em; margin-bottom: 10px; padding: 10px"
-          /><input
-            id="email"
-            name="email"
-            placeholder="Enter Email"
-            type="email"
-            style="font-size: 1.2em; margin-bottom: 10px; padding: 10px"
-          /><input
-            value="Submit"
-            type="submit"
-            style="
+            ">
+          Contact Form
+        </legend>
+        <input id="name" name="name" placeholder="Enter Name" type="text"
+          style="font-size: 1.2em; margin-bottom: 10px; padding: 10px" /><input id="email" name="email"
+          placeholder="Enter Email" type="email" style="font-size: 1.2em; margin-bottom: 10px; padding: 10px" /><input
+          value="Submit" type="submit" style="
               font-size: 1.2em;
               background-color: rgb(0, 0, 0);
               border: 1px solid rgb(0, 0, 0);
@@ -624,15 +465,13 @@ This modal and all its children elements MUST be created and styled ONLY using J
               padding: 10px;
               text-transform: uppercase;
               transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
-            "
-          />
-        </fieldset>
-      </form>
-    </div>
-    <div
-      data-student-notification="Students: Ignore this div element. This is the frame I use to create the left click yellow dot and  pop-ups in the bottom left of the page to indicate keypresses."
-      class="notification-frame"
-      style="
+            " />
+      </fieldset>
+    </form>
+  </div>
+  <div
+    data-student-notification="Students: Ignore this div element. This is the frame I use to create the left click yellow dot and  pop-ups in the bottom left of the page to indicate keypresses."
+    class="notification-frame" style="
         align-items: flex-end;
         background-color: rgba(0, 0, 0, 0.01);
         bottom: 0px;
@@ -645,7 +484,7 @@ This modal and all its children elements MUST be created and styled ONLY using J
         position: fixed;
         width: 100%;
         z-index: 999999;
-      "
-    ></div>
-  </body>
+      "></div>
+</body>
+
 </html>
