@@ -100,6 +100,14 @@ inputEmail.setAttribute("type", "email");
 inputSubmit.setAttribute("value", "Submit");
 inputSubmit.setAttribute("type", "Submit");
 
+// Modal Functionality
+window.onclick = function (event) {
+  if (event.target == mainDiv) {
+    mainDiv.style.display = "none";
+    console.log("outside-click");
+  }
+};
+
 contactBtn.addEventListener("click", () => {
   mainDiv.classList.toggle("show-modal");
   mainDiv.style.display = "flex";
@@ -110,12 +118,4 @@ function addStyle(ele, styleObj) {
   for (let value in styleObj) {
     ele.style[value] = styleObj[value];
   }
-}
-
-// Modal Functionality
-window.onclick = function(event) {
-	if (event.target == mainDiv) {
-			mainDiv.style.display = "none";
-      console.log("outside-click");
-	}
 }
